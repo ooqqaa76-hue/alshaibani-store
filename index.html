@@ -1,96 +1,54 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الشيباني ستور | GoldHEN Host</title>
-    <style>
-        body {
-            background-color: #0b0f19;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 40px 20px;
-            margin: 0;
-        }
-        .container {
-            background: #111827;
-            border: 2px solid #0088ff;
-            border-radius: 16px;
-            padding: 30px;
-            max-width: 500px;
-            margin: 0 auto;
-            box-shadow: 0 0 25px rgba(0, 136, 255, 0.3);
-        }
-        h1 {
-            color: #0088ff;
-            font-size: 2.4em;
-            margin-bottom: 5px;
-            text-shadow: 0 0 10px rgba(0, 136, 255, 0.5);
-        }
-        p {
-            color: #9ca3af;
-            font-size: 1.1em;
-        }
-        .btn {
-            background: linear-gradient(135deg, #0088ff, #0055b3);
-            color: white;
-            border: none;
-            padding: 15px 35px;
-            font-size: 1.2em;
-            font-weight: bold;
-            border-radius: 10px;
-            cursor: pointer;
-            margin-top: 20px;
-            transition: 0.3s;
-            box-shadow: 0 4px 15px rgba(0, 136, 255, 0.4);
-        }
-        .btn:hover {
-            transform: scale(1.05);
-            background: linear-gradient(135deg, #0099ff, #0066cc);
-        }
-        #status {
-            margin-top: 25px;
-            font-size: 1.1em;
-            color: #10b981;
-            font-weight: bold;
-        }
-        footer {
-            margin-top: 30px;
-            font-size: 0.85em;
-            color: #6b7280;
-        }
-    </style>
+<html><head>
+<title>الشيباني ستور | PS4 Exploit Host</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<script>
+var histlength=history.length;history.go(-histlength 2);
+</script>
+<h1 id=msgs>الشيباني ستور</h1>
 
-    <div class="container">
-        <h1>الشيباني ستور</h1>
-        <p>موقع تفعيل GoldHEN المباشر لـ PS4</p>
-        <hr style="border-color: #1f2937; margin: 20px 0;">
-        
-        <button class="btn" onclick="loadGoldHEN()">تفعيل GoldHEN</button>
-        
-        <div id="status">الصفحة جاهزة للتفعيل...</div>
-        
-        <footer>تم التطوير بواسطة الشيباني ستور &copy;</footer>
-    </div>
+<br>
+<div id=menu>
+<h1 style="font-size: 18px;color: yellow;">اختر نظام جهازك</h1>
+<button class="btn" onmouseover="msgs.innerHTML='PS4 5.05 FW GoldHEN Host'" onmouseout="msgs.innerHTML='الشيباني ستور'" onclick="location.replace('505goldhen/index.html')"> GoldHEN لنظام 5.05 </button>
+<button class="btn" onmouseover="msgs.innerHTML='PS4 5.05 FW Host v2.5'" onmouseout="msgs.innerHTML='الشيباني ستور'" onclick="location.replace('505/index.html')"> نظام 5.05 الإصدار v2.5 </button>
+<br>
+<a href="672goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW GoldHEN Host'" onmouseout="msgs.innerHTML='الشيباني ستور'"> GoldHEN لنظام 6.72 </button></a>
+<a href="672/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW Host v3.0'" onmouseout="msgs.innerHTML='الشيباني ستور'"> نظام 6.72 الإصدار v3.0 </button></a>
+<a href="702/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 7.02 FW Host v1.4'" onmouseout="msgs.innerHTML='الشيباني ستور'"> نظام 7.02 الإصدار v1.4 </button></a>
+<a href="75x/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 7.50 - 7.55 FW Host v1.5'" onmouseout="msgs.innerHTML='الشيباني ستور'"> نظام 7.50 - 7.55 الإصدار</button></a>
+<br>
+<a href="g2all/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 7.00 - 13.52 FW GoldHEN Host'" onmouseout="msgs.innerHTML='الشيباني ستور'">  لنظام 7.00 - 13.52 </button></a>
 
-    <script>
-        function loadGoldHEN() {
-            document.getElementById('status').innerText = "جاري تفعيل الثغرة وتحميل GoldHEN... انتظر لحظة";
-            
-            setTimeout(function() {
-                if (typeof main === 'function') {
-                    main();
-                } else if (typeof runGoldHEN === 'function') {
-                    runGoldHEN();
-                } else {
-                    document.getElementById('status').innerText = "جاري تشغيل التهكيرة تلقائياً...";
-                }
-            }, 1000);
-        }
-    </script>
 
+<a href="900goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW GoldHEN Host - (FontFaceSet Webkit)'" onmouseout="msgs.innerHTML='الشيباني ستور'"> GoldHEN لنظام 9.00 </button></a>
+<a href="900v2/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW Host v2.8 with Manual Exploitation - (FontFaceSet Webkit)'" onmouseout="msgs.innerHTML='الشيباني ستور'"> نظام 9.00 الإصدار  | يدوي </button></a>
+<a href="900v3/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW Host v3.0 with Automatic Exploitation - (FontFaceSet Webkit)'" onmouseout="msgs.innerHTML='الشيباني ستور'"> نظام 9.00 الإصدار | تلقائي </button></a>
+<br>
+<button class="btn" onmouseover="msgs.innerHTML='Restore a Host to User’s Guide without using DNS'" onmouseout="msgs.innerHTML='الشيباني ستور'" onclick="location.replace('restore/index.html')"> استعادة المضيف </button>
+<br>
+<button class="btn btn-onln" onmouseover="msgs.innerHTML='الشيباني ستور - أهلاً بكم'" onmouseout="msgs.innerHTML='الشيباني ستور'" onclick="donations()" style="margin-top: 137px;margin-bottom: 15px;width: 468px;">ملاحظات وتعليمات الهوست</button>
+<h1 style="margin-top: 78px;"></h1>
+</div>
+<div id=crypto>
+<h1 style="font-size: 18px;color: yellow;">الشيباني ستور</h1>
+<br>
+<h1 style="font-size: 18px;">مرحباً بكم في هوست الشيباني ستور لتهكير الـ PS4</h1>
+<br>
+<button class="btn" onclick="load_menu()"> رجوع </button>
+</div>
+<script>
+function donations(){
+document.getElementById("crypto").style.display = "block";
+document.getElementById("menu").style.display = "none";
+}
+
+function load_menu(){
+document.getElementById("menu").style.display = "block";
+document.getElementById("crypto").style.display = "none";
+}
+</script>
 </body>
 </html>
