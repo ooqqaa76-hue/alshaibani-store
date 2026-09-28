@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشيباني ستور | GoldHEN Host</title>
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        .container {
+            background: #111827;
+            border: 2px solid #0088ff;
+            border-radius: 16px;
+            padding: 30px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 0 25px rgba(0, 136, 255, 0.3);
+        }
+        h1 {
+            color: #0088ff;
+            font-size: 2.4em;
+            margin-bottom: 5px;
+            text-shadow: 0 0 10px rgba(0, 136, 255, 0.5);
+        }
+        p {
+            color: #9ca3af;
+            font-size: 1.1em;
+        }
+        .btn {
+            background: linear-gradient(135deg, #0088ff, #0055b3);
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 136, 255, 0.4);
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #0099ff, #0066cc);
+        }
+        #status {
+            margin-top: 25px;
+            font-size: 1.1em;
+            color: #10b981;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.85em;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>الشيباني ستور</h1>
+        <p>موقع تفعيل GoldHEN المباشر لـ PS4</p>
+        <hr style="border-color: #1f2937; margin: 20px 0;">
+        
+        <button class="btn" onclick="loadGoldHEN()">تفعيل GoldHEN</button>
+        
+        <div id="status">الصفحة جاهزة للتفعيل...</div>
+        
+        <footer>تم التطوير بواسطة الشيباني ستور &copy;</footer>
+    </div>
+
+    <script>
+        function loadGoldHEN() {
+            document.getElementById('status').innerText = "جاري تفعيل الثغرة وتحميل GoldHEN... انتظر لحظة";
+            
+            setTimeout(function() {
+                if (typeof main === 'function') {
+                    main();
+                } else if (typeof runGoldHEN === 'function') {
+                    runGoldHEN();
+                } else {
+                    document.getElementById('status').innerText = "جاري تشغيل التهكيرة تلقائياً...";
+                }
+            }, 1000);
+        }
+    </script>
+
+</body>
+</html>
